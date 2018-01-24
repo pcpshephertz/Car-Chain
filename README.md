@@ -34,7 +34,6 @@ machine for the developemet of dApps using solidity.
 
 This repository contains script which will download and install tools required to setup up Ethereum solidity based dApp on your machine.
 
-
 # Tools installed
 - Geth
 - Ethereum wallet in mist mode
@@ -53,25 +52,26 @@ All these tools are required for the developement for Ethereum Solidity based dA
 - unzip, tar and wget installed
 
 # How to run
+ - git clone `https://github.com/PaytmBuildForIndia/Car-Chain`
+ - Go to EthereumDevEnvSetup module : `cd src/EthereumDevEnvSetup`
 
-### Download geth, mist and initialize genesis block(One time task)
-- git clone `https://github.com/prakashpandey/EthereumDevEnvSetup.git`
-- cd EthereumDevEnvSetup
+### Setup geth, mist and initialize genesis block(One time task)
+
+Run the below commands in your console. Note you should be in `EthereumDevEnvSetup` module directory.
+
 - chmod 777 src/scripts/*
 - src/scripts/env.sh
 - src/scripts/setup.sh
 - src/scripts/init_genesis_block.sh
 
 ### Run geth and mist
-- cd EthereumDevEnvSetup
 - src/scripts/start.sh
 
 This will create `process.txt` at `EthereumDevEnvSetup/src/tools` which contains pid's of `geth` and `mist` process.
 Please create an account in mist before you start miner.
 
 ### Run miner
-- Open new terminal, 
-- `cd EthereumDevEnvSetup` 
+- Open new terminal.
 - `src/scripts/miner.sh`
 
 When miner will start it will ask you three options
