@@ -1,5 +1,10 @@
-#!/usr/bin/env bash
+################################################################################################################################################
+#@Author Prakash Pandey
+#@Email : pcpandey@mail.com
+#@Github : github.com/prakashpandey
+################################################################################################################################################
 
+#!/usr/bin/env bash
 #Note: To start miner, geth and mist must be running
 #and you should create atleat one account in mist
 

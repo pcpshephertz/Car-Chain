@@ -1,13 +1,13 @@
-#!/usr/bin/env bash
 ################################################################################################################################################
 #@Author Prakash Pandey
 #@Email : pcpandey@mail.com
 #@Github : github.com/prakashpandey
+################################################################################################################################################
 
+#!/usr/bin/env bash
 #About script :
 #The following script download geth and ethereum wallet required for building application based on ethereum solidity.
 #It also exports $GETH and $ETHEREUM_WALLET environment variables
-################################################################################################################################################
 
 printf "Setting up developement environment for Ethereum developement."
 printf "\nNote this script is for Debian 64 bit operating systems."

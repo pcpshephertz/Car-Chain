@@ -1,5 +1,10 @@
-#!/usr/bin/env bash
+################################################################################################################################################
+#@Author Prakash Pandey
+#@Email : pcpandey@mail.com
+#@Github : github.com/prakashpandey
+################################################################################################################################################
 
+#!/usr/bin/env bash
 echo "Starting Ethereum tools geth and mist..."
 
 #To load up setup environment variables
