@@ -8,7 +8,7 @@ pragma solidity ^0.4.18;
 
 contract vehicle {
 
-    //Date structs
+    //Date struct
     struct Date {
         uint16 year;
         uint8 month;
@@ -24,14 +24,22 @@ contract vehicle {
 
     Date date;
     vehicleMetaInfo vInfo;
+
+    //vin is considered unique to every vehicle
     mapping(uint => vehicleMetaInfo) vehicleList;
 
+    /**
+     * Add new vehicles to blockchain
+    **/
     function registerVehicle(uint vinNumber, string ownerName, uint16 y, uint8 m, uint8 d) public {
         date = Date(y, m, d);
         vehicleList[vinNumber].owner = ownerName;
         vehicleList[vinNumber].date = date;
     }
 
+    /**
+    * get vehicle information based on vin number
+    **/
     function getVehileInfo(uint vin) public constant returns(uint, string, uint16, uint8, uint8) {
         return (vin, vehicleList[vin].owner, vehicleList[vin].date.year,
         vehicleList[vin].date.month, vehicleList[vin].date.day);
