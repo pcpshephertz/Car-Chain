@@ -18,16 +18,22 @@ contract vehicle {
     //this struct contains vechiles meta data, when vechile was bought, owner, etc
     //all future vechile properties will be here
     struct vehicleMetaInfo {
-        Date dateTime;
-        uint vin;
+        Date date;
         string owner;
     }
 
-    Date purchaseDate;
+    Date date;
     vehicleMetaInfo vInfo;
+    mapping(uint => vehicleMetaInfo) vehicleList;
 
-    function vehicle(uint vinNumber, string ownerName, uint16 y, uint8 m, uint8 d) public {
-        purchaseDate = Date(y, m, d);
-        vInfo = vehicleMetaInfo(purchaseDate, vinNumber, ownerName);
+    function registerVehicle(uint vinNumber, string ownerName, uint16 y, uint8 m, uint8 d) public {
+        date = Date(y, m, d);
+        vehicleList[vinNumber].owner = ownerName;
+        vehicleList[vinNumber].date = date;
+    }
+
+    function getVehileInfo(uint vin) public constant returns(uint, string, uint16, uint8, uint8) {
+        return (vin, vehicleList[vin].owner, vehicleList[vin].date.year,
+        vehicleList[vin].date.month, vehicleList[vin].date.day);
     }
 }
