@@ -28,11 +28,9 @@ The dApp and EthereumDevEnvSetup are different project module, loosely coupled w
 ## EthereumDevEnvSetup
 
 This module is used to automate the installation of Ethereum network on users local 
-machine for the developemet of dApps using solidity.
+machine for the developement of dApps using solidity.
 
-# EthereumDevEnvSetup
-
-This repository contains script which will download and install tools required to setup up Ethereum solidity based dApp on your machine.
+Please follow below steps to download and install tools required to setup up Ethereum solidity based dApp on your machine.
 
 # Tools installed
 - Geth

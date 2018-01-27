@@ -22,7 +22,6 @@ All these tools are required for the developement for Ethereum Solidity based dA
 # How to run
 
 ### Download geth, mist and initialize genesis block(One time task)
-- git clone `https://github.com/prakashpandey/EthereumDevEnvSetup.git`
 - cd EthereumDevEnvSetup
 - chmod 777 src/scripts/*
 - src/scripts/env.sh
