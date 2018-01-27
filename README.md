@@ -1,6 +1,6 @@
 # Car-Chain
 
-Distributed autonomous car deta network build on the top of blockchain technology.
+Distributed autonomous car data network build on the top of blockchain technology.
 
 ## Prerequisite
 - Linux machine, windows machine, mac
