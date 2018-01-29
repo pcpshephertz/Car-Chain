@@ -1,2 +1,2 @@
-This package source code of dApp[smart contracts, dApp clients, UI]
+This package contains source code of dApp[smart contracts, dApp clients, UI]
 and scripts for blockchain developement environment setup.
